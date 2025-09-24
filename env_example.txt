@@ -12,8 +12,5 @@ MAX_SEARCH_RESULTS=5
 
 # 模型配置选项
 # 可选模型: deepseek-chat, deepseek-coder
-s
-# 注意：
-# - 对于直接OpenAI SDK调用：使用 "deepseek-chat"
-# - 对于CrewAI/LiteLLM：系统会自动添加 "deepseek/" 前缀变成 "deepseek/deepseek-chat"
+# 注意：系统会自动添加 openai/ 前缀用于LiteLLM
 DEFAULT_MODEL="deepseek-chat"
