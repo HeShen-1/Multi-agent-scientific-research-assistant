@@ -1,0 +1,29 @@
+# 修复版本冲突的依赖文件
+# 使用兼容的包版本
+
+# 核心CrewAI包
+crewai>=0.40.0
+crewai-tools>=0.4.20
+
+# 搜索和API工具
+tavily-python>=0.3.0
+arxiv>=1.4.0
+openai>=1.35.0
+
+# 基础依赖
+python-dotenv>=1.0.0
+requests>=2.31.0
+json-repair>=0.7.0
+
+# Web界面
+streamlit>=1.28.0
+
+# 向量数据库（可选，用于高级功能）
+chromadb>=0.4.0
+
+# LangChain（使用与CrewAI兼容的版本）
+# 注意：保留langchain-openai用于CrewAI兼容性，同时使用OpenAI SDK进行直接调用
+langchain>=0.1.0,<0.3.0
+langchain-core>=0.1.0,<0.3.0
+langchain-community>=0.0.0,<0.3.0
+langchain-openai>=0.1.0,<0.3.0

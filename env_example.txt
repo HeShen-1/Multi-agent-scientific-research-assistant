@@ -1,0 +1,19 @@
+# DeepSeek API配置（兼容OpenAI格式）
+OPENAI_API_KEY="sk-your-deepseek-api-key-here"
+OPENAI_API_BASE="https://api.deepseek.com/v1"
+OPENAI_MODEL_NAME="deepseek-chat"
+
+# Tavily AI搜索API配置（可选）
+TAVILY_API_KEY="tvly-your-tavily-api-key-here"
+
+# 其他配置
+OPENAI_TEMPERATURE=0.7
+MAX_SEARCH_RESULTS=5
+
+# 模型配置选项
+# 可选模型: deepseek-chat, deepseek-coder
+s
+# 注意：
+# - 对于直接OpenAI SDK调用：使用 "deepseek-chat"
+# - 对于CrewAI/LiteLLM：系统会自动添加 "deepseek/" 前缀变成 "deepseek/deepseek-chat"
+DEFAULT_MODEL="deepseek-chat"
